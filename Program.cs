@@ -15,6 +15,10 @@ do
             Ahorcado gameHanged = new Ahorcado();
             gameHanged.InitialGame();
             break;
+        case "3":
+            PPT gamePPT = new PPT();
+            gamePPT.InitialGame();
+            break;
 
         default:
             Console.WriteLine("\nUnknown(invalid) option");
@@ -38,8 +42,9 @@ string MenuSelect()
     Console.Clear();
     Console.WriteLine("====== Welcome to MiniGames Console======");
     Console.WriteLine("--------- Name ------------ Number ------");
-    Console.WriteLine("    Gato(Tic-Tac-Toe)          1         ");
-    Console.WriteLine("    Ahorcado                   2         ");
+    Console.WriteLine("   Gato(Tic-Tac-Toe)          1         ");
+    Console.WriteLine("   Ahorcado                   2         ");
+    Console.WriteLine("   Piedra, Papel o Tijera     3         ");
     Console.Write("\nSelect to minigame: ");
     select = Console.ReadLine();
 
